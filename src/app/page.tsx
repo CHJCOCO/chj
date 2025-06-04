@@ -248,7 +248,7 @@ export default function Home() {
                 icon: "💼",
                 title: "명함 대신 사용할 나만의 소개 사이트가 필요한 프리랜서",
                 desc: "개인 브랜딩을 위한 전문적인 포트폴리오 사이트가 필요한 분들",
-                image: "https://plus.unsplash.com/premium_photo-1736652293708-ccd3ff521168?w=300&h=200&fit=crop&crop=center"
+                image: "https://images.unsplash.com/photo-1694476114840-e84670cabafb?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               },
               {
                 icon: "💸",
@@ -260,7 +260,7 @@ export default function Home() {
                 icon: "🤝",
                 title: "내가 원하는 느낌 그대로 제작되고 소통이 잘 되는 곳을 찾는 분",
                 desc: "디테일한 소통과 맞춤형 제작을 중요시하는 분들",
-                image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=300&h=200&fit=crop&crop=center"
+                image: "https://images.unsplash.com/photo-1642724978500-c13b821afe04?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               }
             ].map((item, index) => (
               <div key={index} className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700/50 hover:border-purple-500/30 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/10 overflow-hidden">
