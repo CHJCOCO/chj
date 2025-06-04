@@ -3,36 +3,56 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 py-20 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20"></div>
-        {/* Background decoration */}
-        <div className="absolute top-20 right-10 w-72 h-72 opacity-10">
-        <Image
-            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=400&fit=crop&crop=center"
-            alt="Modern workspace"
-            width={300}
-            height={300}
-            className="rounded-full blur-sm"
-          />
+      {/* Navigation */}
+      <nav className="relative z-20 px-4 py-6">
+        <div className="max-w-6xl mx-auto flex justify-between items-center">
+          <div className="flex items-center">
+            <Image
+              src="/images/ryuin-logo.svg"
+              alt="Ryuin"
+              width={120}
+              height={60}
+              className="h-12 w-auto"
+            />
+          </div>
+          <div className="hidden md:flex space-x-8">
+            <a href="#services" className="text-gray-300 hover:text-white transition-colors">서비스</a>
+            <a href="#portfolio" className="text-gray-300 hover:text-white transition-colors">포트폴리오</a>
+            <a href="#pricing" className="text-gray-300 hover:text-white transition-colors">가격</a>
+            <a href="mailto:hyeonje103@gmail.com" className="text-amber-400 hover:text-amber-300 font-semibold transition-colors">문의하기</a>
+          </div>
         </div>
-        <div className="absolute bottom-20 left-10 w-64 h-64 opacity-10">
+      </nav>
+
+      {/* Hero Section */}
+      <section className="relative py-20 px-4 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=400&fit=crop&crop=center"
-            alt="Analytics dashboard"
-            width={250}
-            height={250}
-            className="rounded-full blur-sm"
+            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Digital technology background"
+            fill
+            className="object-cover opacity-60"
+            priority
           />
+          {/* Soft dark overlay for better text readability */}
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-900/90 via-slate-800/80 to-gray-900/90"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-700/5 to-slate-600/5"></div>
         </div>
         
-        <div className="relative max-w-6xl mx-auto text-center">
-          <div className="mb-8">
-            <span className="text-purple-400 text-sm font-semibold uppercase">오직 고객만을 생각하는 웹사이트 제작 서비스</span>
-          </div>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent">
+        <div className="relative max-w-6xl mx-auto text-center z-10">
+          <h1 className="font-kotra text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent">
             당신의 아이디어,<br />
-            <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">단 7일 만에 웹사이트로!</span>
+            <span className="-ml-50 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent inline-flex items-center gap-0">
+              <Image
+                src="/images/lightbom.png"
+                alt="아이디어 전구"
+                width={220}
+                height={220}
+                className="inline-block drop-shadow-[0_0_80px_rgba(168,85,247,1)] brightness-150 saturate-200 contrast-150 scale-125"
+              />
+              단 <span className="text-yellow-400 text-6xl md:text-8xl font-black drop-shadow-[0_0_10px_rgba(251,191,36,0.8)] animate-pulse ml-4">7</span>일 만에 웹사이트로!
+            </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed max-w-4xl mx-auto">
             지금 이메일로 신청만 하면, 빠르게 상담하고 제작까지 진행해드립니다.<br />
@@ -41,30 +61,155 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
             <a
               href="mailto:hyeonje103@gmail.com"
-              className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-10 py-4 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-purple-500/25 transform hover:scale-105"
+              className="bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-white px-12 py-6 rounded-2xl text-xl font-semibold transition-all duration-500 shadow-[0_8px_32px_rgba(245,158,11,0.25)] hover:shadow-[0_12px_48px_rgba(245,158,11,0.4)] border border-amber-400/20 hover:border-amber-300/30 relative group transform hover:scale-[1.02] hover:-translate-y-1"
             >
-              ✅ 무료 상담 신청하기
-        </a>
-        <a
-              href="mailto:hyeonje103@gmail.com"
-              className="text-purple-400 hover:text-purple-300 font-semibold text-lg border border-purple-500/30 px-8 py-4 rounded-full hover:border-purple-400/50 transition-all duration-300 font-mono"
-            >
-              📧 hyeonje103@gmail.com
+              <span className="relative z-10 flex items-center justify-center gap-3">
+                📧 무료 상담 신청하기
+              </span>
+              {/* Subtle inner glow effect */}
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-white/10 to-yellow-200/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </a>
           </div>
           
           {/* Hero Image */}
-          <div className="relative max-w-4xl mx-auto mb-16">
-            <div className="relative">
-              <Image
-                src="https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Person holding light bulb - representing ideas and innovation"
-                width={800}
-                height={500}
-                className="rounded-2xl shadow-2xl"
-                priority
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-purple-900/50 to-transparent rounded-2xl"></div>
+          <div className="relative max-w-7xl mx-auto mb-16 overflow-hidden">
+            <div className="flex space-x-6 py-8 animate-[slide_25s_linear_infinite]">
+              {/* Card 1 */}
+              <div className="flex-shrink-0 w-80 h-80 bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl border border-gray-400/20 hover:border-gray-300/30 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.03)] hover:shadow-[0_0_30px_rgba(255,255,255,0.05)] overflow-hidden backdrop-blur-sm">
+                <div className="relative h-full">
+                  <Image
+                    src="https://images.unsplash.com/photo-1553044020-8c90843adf96?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Creative workspace with lightbulb"
+                    width={320}
+                    height={320}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 via-gray-900/20 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-lg font-medium text-gray-200/80 drop-shadow-sm tracking-wide">아이디어 구현</h3>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 2 */}
+              <div className="flex-shrink-0 w-80 h-80 bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl border border-gray-400/20 hover:border-gray-300/30 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.03)] hover:shadow-[0_0_30px_rgba(255,255,255,0.05)] overflow-hidden backdrop-blur-sm">
+                <div className="relative h-full">
+                  <Image
+                    src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Coding and development workspace"
+                    width={320}
+                    height={320}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 via-gray-900/20 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-lg font-medium text-gray-200/80 drop-shadow-sm tracking-wide">빠른 제작</h3>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 3 */}
+              <div className="flex-shrink-0 w-80 h-80 bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl border border-gray-400/20 hover:border-gray-300/30 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.03)] hover:shadow-[0_0_30px_rgba(255,255,255,0.05)] overflow-hidden backdrop-blur-sm">
+                <div className="relative h-full">
+                  <Image
+                    src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Multiple devices showing responsive design"
+                    width={320}
+                    height={320}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 via-gray-900/20 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-lg font-medium text-gray-200/80 drop-shadow-sm tracking-wide">반응형 디자인</h3>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 4 */}
+              <div className="flex-shrink-0 w-80 h-80 bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl border border-gray-400/20 hover:border-gray-300/30 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.03)] hover:shadow-[0_0_30px_rgba(255,255,255,0.05)] overflow-hidden backdrop-blur-sm">
+                <div className="relative h-full">
+                  <Image
+                    src="https://images.unsplash.com/photo-1662974770404-468fd9660389?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Customer support and consultation"
+                    width={320}
+                    height={320}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 via-gray-900/20 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-lg font-medium text-gray-200/80 drop-shadow-sm tracking-wide">24시간 상담</h3>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 5 */}
+              <div className="flex-shrink-0 w-80 h-80 bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl border border-gray-400/20 hover:border-gray-300/30 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.03)] hover:shadow-[0_0_30px_rgba(255,255,255,0.05)] overflow-hidden backdrop-blur-sm">
+                <div className="relative h-full">
+                  <Image
+                    src="/images/qa.jpg"
+                    alt="Quality assurance and premium service"
+                    width={320}
+                    height={320}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 via-gray-900/20 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-lg font-medium text-gray-200/80 drop-shadow-sm tracking-wide">품질 보장</h3>
+                  </div>
+                </div>
+              </div>
+
+              {/* Duplicate cards for seamless loop */}
+              {/* Card 1 - Duplicate */}
+              <div className="flex-shrink-0 w-80 h-80 bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl border border-gray-400/20 hover:border-gray-300/30 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.03)] hover:shadow-[0_0_30px_rgba(255,255,255,0.05)] overflow-hidden backdrop-blur-sm">
+                <div className="relative h-full">
+                  <Image
+                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&crop=center"
+                    alt="Creative workspace with lightbulb"
+                    width={320}
+                    height={320}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 via-gray-900/20 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-lg font-medium text-gray-200/80 drop-shadow-sm tracking-wide">아이디어 구현</h3>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 2 - Duplicate */}
+              <div className="flex-shrink-0 w-80 h-80 bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl border border-gray-400/20 hover:border-gray-300/30 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.03)] hover:shadow-[0_0_30px_rgba(255,255,255,0.05)] overflow-hidden backdrop-blur-sm">
+                <div className="relative h-full">
+                  <Image
+                    src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop&crop=center"
+                    alt="Coding and development workspace"
+                    width={320}
+                    height={320}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 via-gray-900/20 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-lg font-medium text-gray-200/80 drop-shadow-sm tracking-wide">빠른 제작</h3>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 3 - Duplicate */}
+              <div className="flex-shrink-0 w-80 h-80 bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl border border-gray-400/20 hover:border-gray-300/30 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.03)] hover:shadow-[0_0_30px_rgba(255,255,255,0.05)] overflow-hidden backdrop-blur-sm">
+                <div className="relative h-full">
+                  <Image
+                    src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=300&fit=crop&crop=center"
+                    alt="Multiple devices showing responsive design"
+                    width={320}
+                    height={320}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 via-gray-900/20 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-lg font-medium text-gray-200/80 drop-shadow-sm tracking-wide">반응형 디자인</h3>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -75,7 +220,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-purple-400 text-sm font-semibold uppercase">Target Customers</span>
-            <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
+            <h2 className="font-kotra text-4xl md:text-5xl font-bold mt-4 mb-6">
               이런 분들께 <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">추천해요</span>
             </h2>
           </div>
@@ -124,7 +269,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
                   <div className="absolute top-4 left-4 text-3xl">{item.icon}</div>
                 </div>
-                <div className="p-6">
+                <div className="p-6 font-inter">
                   <h3 className="text-white font-semibold text-lg mb-3 leading-tight">{item.title}</h3>
                   <p className="text-gray-400 text-sm leading-relaxed">{item.desc}</p>
                 </div>
@@ -135,11 +280,11 @@ export default function Home() {
       </section>
 
       {/* Service Features */}
-      <section className="py-20 px-4 bg-gray-900">
+      <section id="services" className="py-20 px-4 bg-gray-900">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-purple-400 text-sm font-semibold uppercase">Services</span>
-            <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
+            <h2 className="font-kotra text-4xl md:text-5xl font-bold mt-4 mb-6">
               전략형 웹사이트 <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">제작 서비스</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
@@ -173,12 +318,12 @@ export default function Home() {
             
             <div className="relative">
               <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700/50">
-                <h3 className="text-2xl font-bold mb-6 text-white">작업 과정</h3>
+                <h3 className="font-inter text-2xl font-bold mb-6 text-white">작업 과정</h3>
                 <div className="space-y-6">
                   <div className="bg-gradient-to-r from-purple-900/30 to-pink-900/30 p-6 rounded-xl">
-                    <h4 className="font-semibold text-purple-300 mb-2 text-lg">📅 제작 기간</h4>
-                    <p className="text-gray-300 text-lg font-semibold">평균 5~7일</p>
-                    <p className="text-gray-400 text-sm">(요구사항에 따라 다름)</p>
+                    <h4 className="font-inter font-semibold text-purple-300 mb-2 text-lg">📅 제작 기간</h4>
+                    <p className="font-inter text-gray-300 text-lg font-semibold">평균 5~7일</p>
+                    <p className="font-inter text-gray-400 text-sm">(요구사항에 따라 다름)</p>
                   </div>
                   <div className="space-y-3">
                     {[
@@ -214,11 +359,11 @@ export default function Home() {
       </section>
 
       {/* Portfolio Examples */}
-      <section className="py-20 px-4 bg-gray-800/30">
+      <section id="portfolio" className="py-20 px-4 bg-gray-800/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-purple-400 text-sm font-semibold uppercase">Portfolio</span>
-            <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
+            <h2 className="font-kotra text-4xl md:text-5xl font-bold mt-4 mb-6">
               포트폴리오 <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">예시</span>
             </h2>
           </div>
@@ -278,7 +423,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-purple-400 text-sm font-semibold uppercase">Testimonials</span>
-            <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
+            <h2 className="font-kotra text-4xl md:text-5xl font-bold mt-4 mb-6">
               실제 사용 <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">후기</span>
             </h2>
           </div>
@@ -335,11 +480,11 @@ export default function Home() {
       </section>
 
       {/* Pricing */}
-      <section className="py-20 px-4 bg-gray-800/50">
+      <section id="pricing" className="py-20 px-4 bg-gray-800/50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-purple-400 text-sm font-semibold uppercase">Pricing</span>
-            <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
+            <h2 className="font-kotra text-4xl md:text-5xl font-bold mt-4 mb-6">
               가격 및 <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">안내</span>
             </h2>
           </div>
@@ -469,7 +614,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-purple-400 text-sm font-semibold uppercase">FAQ</span>
-            <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">
+            <h2 className="font-kotra text-4xl md:text-5xl font-bold mt-4 mb-6">
               자주 묻는 <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">질문</span>
             </h2>
           </div>
@@ -506,10 +651,18 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div className="md:col-span-2">
-              <h3 className="text-2xl font-bold text-white mb-4">HJ Landing</h3>
+              <div className="flex items-center mb-4">
+                <Image
+                  src="/images/ryuin-logo.svg"
+                  alt="Ryuin"
+                  width={140}
+                  height={70}
+                  className="h-10 w-auto"
+                />
+              </div>
               <p className="text-gray-400 mb-6 leading-relaxed">
-                Customer Feedback Analytics<br />
-                like it was supposed to be!
+                Professional Web Development Services<br />
+                Fast, Reliable, and Tailored for You
               </p>
               <div className="flex space-x-4">
                 <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-purple-600 transition-all duration-300">
@@ -543,10 +696,10 @@ export default function Home() {
           </div>
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-500 text-sm">
-              © 2025 HJ Landing. All rights reserved.
+              © 2025 Ryuin. All rights reserved.
             </p>
             <p className="text-gray-500 text-sm mt-4 md:mt-0">
-              Not affiliated with any third-party platform.
+              Professional web development services.
             </p>
           </div>
         </div>
