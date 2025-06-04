@@ -8,7 +8,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20"></div>
         {/* Background decoration */}
         <div className="absolute top-20 right-10 w-72 h-72 opacity-10">
-          <Image
+        <Image
             src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=400&fit=crop&crop=center"
             alt="Modern workspace"
             width={300}
@@ -44,8 +44,8 @@ export default function Home() {
               className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-10 py-4 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-purple-500/25 transform hover:scale-105"
             >
               ✅ 무료 상담 신청하기
-            </a>
-            <a
+        </a>
+        <a
               href="mailto:hyeonje103@gmail.com"
               className="text-purple-400 hover:text-purple-300 font-semibold text-lg border border-purple-500/30 px-8 py-4 rounded-full hover:border-purple-400/50 transition-all duration-300 font-mono"
             >
@@ -426,7 +426,7 @@ export default function Home() {
             <h3 className="text-2xl font-bold mb-6 text-white">📩 신청 이메일</h3>
             <a
               href="mailto:hyeonje103@gmail.com"
-              className="text-3xl font-bold text-yellow-300 hover:text-yellow-100 transition-colors duration-300 font-mono"
+              className="text-2xl font-bold text-yellow-300 hover:text-yellow-100 transition-colors duration-300 font-mono"
             >
               hyeonje103@gmail.com
             </a>
