@@ -143,7 +143,7 @@ export default function Home() {
               전략형 웹사이트 <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">제작 서비스</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              단순한 "홈페이지 제작"이 아니라, 당신의 브랜드와 서비스가 잘 보이도록 돕는 전략형 웹사이트를 제작합니다.
+              단순한 &ldquo;홈페이지 제작&rdquo;이 아니라, 당신의 브랜드와 서비스가 잘 보이도록 돕는 전략형 웹사이트를 제작합니다.
             </p>
           </div>
           
@@ -320,7 +320,7 @@ export default function Home() {
                     <p className="text-gray-400 text-sm">{item.role}</p>
                   </div>
                 </div>
-                <p className="text-gray-300 leading-relaxed italic mb-4">"{item.text}"</p>
+                <p className="text-gray-300 leading-relaxed italic mb-4">&ldquo;{item.text}&rdquo;</p>
                 <div className="flex text-yellow-400 mt-4">
                   {[...Array(5)].map((_, i) => (
                     <svg key={i} className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
