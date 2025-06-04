@@ -40,18 +40,18 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-slate-700/5 to-slate-600/5"></div>
         </div>
         
-        <div className="relative max-w-6xl mx-auto text-center z-10">
-          <h1 className="font-kotra text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent">
+        <div className="relative max-w-6xl mx-auto text-center z-10 px-4">
+          <h1 className="font-kotra text-3xl md:text-5xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent">
             당신의 아이디어,<br />
-            <span className="-ml-50 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent inline-flex items-center gap-0">
+            <span className="ml-0 md:-ml-50 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent inline-flex items-center gap-0 justify-center">
               <Image
                 src="/images/lightbom.png"
                 alt="아이디어 전구"
                 width={220}
                 height={220}
-                className="inline-block drop-shadow-[0_0_80px_rgba(168,85,247,1)] brightness-150 saturate-200 contrast-150 scale-125"
+                className="inline-block drop-shadow-[0_0_80px_rgba(168,85,247,1)] brightness-150 saturate-200 contrast-150 scale-125 w-16 h-16 md:w-auto md:h-auto"
               />
-              단 <span className="text-yellow-400 text-6xl md:text-8xl font-black drop-shadow-[0_0_10px_rgba(251,191,36,0.8)] animate-pulse ml-4">7</span>일 만에 웹사이트로!
+              단 <span className="text-yellow-400 text-3xl md:text-6xl lg:text-8xl font-black drop-shadow-[0_0_10px_rgba(251,191,36,0.8)] animate-pulse ml-1 md:ml-4">7</span><span className="text-3xl md:text-5xl lg:text-7xl">일 만에 웹사이트로!</span>
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed max-w-4xl mx-auto">
