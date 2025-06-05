@@ -70,7 +70,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
             <a
               href="mailto:hyeonje103@gmail.com"
-              className="bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-white px-12 py-6 rounded-2xl text-xl font-semibold transition-all duration-500 shadow-[0_8px_32px_rgba(245,158,11,0.25)] hover:shadow-[0_12px_48px_rgba(245,158,11,0.4)] border border-amber-400/20 hover:border-amber-300/30 relative group transform hover:scale-[1.02] hover:-translate-y-1"
+              className="bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-white px-12 py-6 rounded-2xl text-base md:text-xl font-semibold transition-all duration-500 shadow-[0_8px_32px_rgba(245,158,11,0.25)] hover:shadow-[0_12px_48px_rgba(245,158,11,0.4)] border border-amber-400/20 hover:border-amber-300/30 relative group transform hover:scale-[1.02] hover:-translate-y-1"
             >
               <span className="relative z-10 flex items-center justify-center gap-3">
                 📧 무료 상담 신청하기
@@ -605,7 +605,7 @@ export default function Home() {
           
           <a
             href="mailto:hyeonje103@gmail.com"
-            className="inline-block bg-white text-purple-900 px-12 py-4 rounded-full text-lg font-bold hover:bg-purple-50 transition-all duration-300 transform hover:scale-105 shadow-lg"
+            className="inline-block bg-white text-purple-900 px-12 py-4 rounded-full text-base md:text-lg font-bold hover:bg-purple-50 transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             지금 신청하기 →
           </a>
