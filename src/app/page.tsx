@@ -12,7 +12,10 @@ export default function Home() {
               alt="Ryuin"
               width={240}
               height={120}
-              className="h-20 w-auto brightness-0 invert"
+              className="h-20 w-auto"
+              style={{
+                filter: 'brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(266deg) brightness(104%) contrast(97%)'
+              }}
             />
           </div>
           <div className="hidden md:flex space-x-8">
@@ -657,7 +660,10 @@ export default function Home() {
                   alt="Ryuin"
                   width={300}
                   height={150}
-                  className="h-20 w-auto brightness-0 invert"
+                  className="h-20 w-auto"
+                  style={{
+                    filter: 'brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(266deg) brightness(104%) contrast(97%)'
+                  }}
                 />
               </div>
               <p className="text-gray-400 mb-6 leading-relaxed">
