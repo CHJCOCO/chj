@@ -53,9 +53,9 @@ export default function Home() {
                   alt="아이디어 전구"
                   width={220}
                   height={220}
-                  className="inline-block drop-shadow-[0_0_80px_rgba(168,85,247,1)] brightness-150 saturate-200 contrast-150 scale-125 w-16 h-16 md:w-auto md:h-auto"
+                  className="inline-block drop-shadow-[0_0_80px_rgba(168,85,247,1)] brightness-150 saturate-200 contrast-150 scale-125 w-auto h-24 md:w-auto md:h-auto"
                 />
-                단 <span className="text-yellow-400 text-3xl md:text-6xl lg:text-8xl font-black drop-shadow-[0_0_10px_rgba(251,191,36,0.8)] animate-pulse ml-1 md:ml-4">7</span><span className="text-3xl md:text-5xl lg:text-7xl md:hidden">일 만에</span>
+                <span className="-ml-10 md:-ml-12">단 <span className="text-yellow-400 text-3xl md:text-6xl lg:text-8xl font-black drop-shadow-[0_0_10px_rgba(251,191,36,0.8)] animate-pulse ml-0 md:ml-2">7</span><span className="text-3xl md:text-5xl lg:text-7xl md:hidden">일 만에</span></span>
               </div>
               <span className="text-3xl md:text-5xl lg:text-7xl">
                 <span className="md:hidden">웹사이트로!</span>
