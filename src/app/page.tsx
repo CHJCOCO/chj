@@ -8,11 +8,11 @@ export default function Home() {
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <div className="flex items-center">
             <Image
-              src="/images/ryuin-logo.svg"
+              src="/images/ryuin.png"
               alt="Ryuin"
-              width={120}
-              height={60}
-              className="h-12 w-auto"
+              width={240}
+              height={120}
+              className="h-20 w-auto brightness-0 invert"
             />
           </div>
           <div className="hidden md:flex space-x-8">
@@ -659,11 +659,11 @@ export default function Home() {
             <div className="md:col-span-2">
               <div className="flex items-center mb-4">
                 <Image
-                  src="/images/ryuin-logo.svg"
+                  src="/images/ryuin.png"
                   alt="Ryuin"
-                  width={140}
-                  height={70}
-                  className="h-10 w-auto"
+                  width={300}
+                  height={150}
+                  className="h-20 w-auto brightness-0 invert"
                 />
               </div>
               <p className="text-gray-400 mb-6 leading-relaxed">
