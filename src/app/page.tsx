@@ -233,31 +233,26 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                icon: "🚀",
                 title: "창업은 했지만 아직 홈페이지가 없는 분",
                 desc: "비즈니스는 시작했지만 온라인 존재감이 필요한 분들",
                 image: "https://images.unsplash.com/photo-1556742393-d75f468bfcb0?w=300&h=200&fit=crop&crop=center"
               },
               {
-                icon: "📱",
                 title: "인스타그램/카카오톡으로만 제품을 판매 중인 소상공인",
                 desc: "SNS에서 전문적인 웹사이트로 확장하고 싶은 분들",
                 image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=300&h=200&fit=crop&crop=center"
               },
               {
-                icon: "💼",
                 title: "명함 대신 사용할 나만의 소개 사이트가 필요한 프리랜서",
                 desc: "개인 브랜딩을 위한 전문적인 포트폴리오 사이트가 필요한 분들",
                 image: "https://images.unsplash.com/photo-1694476114840-e84670cabafb?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               },
               {
-                icon: "💸",
                 title: "너무 비싼 견적에 부담을 느끼고 있던 분",
                 desc: "합리적인 가격으로 품질 좋은 웹사이트를 원하는 분들",
                 image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=300&h=200&fit=crop&crop=center"
               },
               {
-                icon: "🤝",
                 title: "내가 원하는 느낌 그대로 제작되고 소통이 잘 되는 곳을 찾는 분",
                 desc: "디테일한 소통과 맞춤형 제작을 중요시하는 분들",
                 image: "https://images.unsplash.com/photo-1642724978500-c13b821afe04?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -273,7 +268,6 @@ export default function Home() {
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
-                  <div className="absolute top-4 left-4 text-3xl">{item.icon}</div>
                 </div>
                 <div className="p-6 font-inter">
                   <h3 className="text-white font-semibold text-lg mb-3 leading-tight">{item.title}</h3>
